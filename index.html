@@ -1,0 +1,291 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks Trump</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        body.loaded {
+            opacity: 1;
+        }
+        .type-text {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        :root {
+            --primary-bg-color: #000000;
+            --secondary-bg-color: #0a0a0a;
+            --primary-text-color: #00ff00;
+            --accent-color: #00ff00;
+            --primary-font-family: 'Courier New', monospace;
+        }
+
+        body {
+            background-color: var(--primary-bg-color);
+            color: var(--primary-text-color);
+            font-family: var(--primary-font-family);
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .navbar-brand, .nav-link {
+            color: var(--accent-color) !important;
+        }
+
+        #matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .logo-section {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-container {
+            width: 80%;
+            max-width: 500px;
+            z-index: 1;
+        }
+
+        .logo-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.5);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: var(--accent-color);
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+            animation: blink 1s infinite;
+            z-index: 1;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .content-section {
+            background-color: rgba(10, 10, 10, 0.8);
+            padding: 4rem 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        h1, h2 {
+            color: var(--accent-color);
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+
+        .description, .tokenomics-details {
+            font-size: 1.1rem;
+            text-align: left;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+        }
+
+        .tokenomics-item {
+            background-color: rgba(0, 255, 0, 0.1);
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--accent-color);
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background-color: var(--accent-color);
+            animation: blink 0.7s infinite;
+        }
+
+        .type-text {
+            visibility: hidden;
+        }
+
+        .char {
+            visibility: hidden;
+            white-space: pre-wrap;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+<style id="vvvebjs-styles">#home > .scroll-indicator > .fas.fa-chevron-down {
+	float: right;
+}
+
+</style></head>
+<body class="loaded">
+    <canvas id="matrix-bg" width="1536" height="864"></canvas>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://x.com/thankstrump2025?s=21">Thanks Trump</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarNav" style="">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" 
+href="https://x.com/thankstrump2025?s=21"
+                           >Twitter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"         href="#BuyonRaydium">Buy.on.Ray</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#BuyonJupiter">Buy.on.Jup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Dexscreener">Dexscreener</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="logo-section">
+        <div class="logo-container">
+            <img src="https://memer.studio/media/usermedia/cedd627b-8c1e-4caa-afea-4b9250f7b4b3.jpg" alt="Universal Savior Donald Trump mascot character" class="logo-image">
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="container">
+            <h1 id="title" class="type-text" style="visibility: visible; opacity: 1;">Thanks Trump<span class="cursor"></span></h1>
+            <p class="description type-text" style="visibility: visible; opacity: 1;">
+
+ThanksTrump is a heartfelt, community-driven memecoin that celebrates the bold legacy of Donald Trump, combining gratitude, political nostalgia, and his visionary support for the pro-crypto movement. Built as a fair launch project, it’s designed to ensure everyone has a chance to participate in this unique token of appreciation. More than just a cryptocurrency, ThanksTrump is a way to honor his contributions and say, “Thanks, Trump!” with humor, inclusivity, and a shared vision for a crypto-friendly future. Join the movement, share the laughs, and be part of a community that’s making memecoins great again. <span class="cursor"></span></p>
+        </div>
+    </section>
+
+ 
+ 
+            </div>
+            <p id="copyright" class="copyright type-text" style="visibility: visible; opacity: 1;">Thanks Trump ©copyright - All rights reserved 2025<span class="cursor"></span></p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Immediately hide all .type-text elements
+        (function() {
+            var elements = document.querySelectorAll('.type-text');
+            elements.forEach(function(element) {
+                element.style.visibility = 'hidden';
+                element.style.opacity = '0';
+            });
+        })();
+    
+        function initPage() {
+            // Matrix background effect
+            var q = document.getElementById('matrix-bg'),
+                s = window.screen,
+                w = q.width = s.width,
+                h = q.height = s.height,
+                p = Array(256).join(1).split(''),
+                c = q.getContext("2d"),
+                m = Math;
+    
+            setInterval(function() {
+                c.fillStyle = "rgba(0,0,0,0.05)";
+                c.fillRect(0, 0, w, h);
+                c.fillStyle = "rgba(0,255,0,1)";
+                p = p.map(function(v, i) {
+                    r = m.random();
+                    var str = String.fromCharCode(m.floor(2720 + r * 33));
+                    c.fillText(str, i * 10, v);
+                    v += 10;
+                    var ret = v > 768 + r * 1e4 ? 0 : v
+                    return ret;
+                });
+            }, 33);
+    
+            // Typing effect
+            function typeWriter(element, speed = 50) {
+                element.style.visibility = 'visible';
+                element.style.opacity = '1';
+                const text = element.textContent || element.innerText;
+                element.innerHTML = '';
+                
+                let i = 0;
+                function type() {
+                    if (i < text.length) {
+                        element.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(type, speed);
+                    } else {
+                        const cursor = document.createElement('span');
+                        cursor.className = 'cursor';
+                        element.appendChild(cursor);
+                    }
+                }
+                type();
+            }
+    
+            const elements = document.querySelectorAll('.type-text');
+            elements.forEach((element, index) => {
+                setTimeout(() => {
+                    typeWriter(element);
+                }, 500 + index * 2000); // Start after a short delay, then stagger each element
+            });
+    
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+            }, 100); // Short delay before showing the body
+        }
+    
+        document.addEventListener('DOMContentLoaded', initPage);
+    </script>
+
+</body></html>
